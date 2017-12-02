@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/a7"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/mr2015"
+        android:background="@drawable/btn1"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textAllCaps="false"
+        android:textColor="@color/colorVang"
+        android:textSize="25sp"
+        android:text="Mr Ms IT 2015"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/mr2016"
+        android:textAllCaps="false"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorVang"
+        android:background="@drawable/btn1"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:fontFamily="cursive"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Mr Ms IT 2016"
+        />
+    <!--<Button-->
+        <!--android:id="@+id/bg2017"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:textColor="@color/colorVang"-->
+        <!--android:background="@drawable/btn1"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="25sp"-->
+        <!--android:fontFamily="cursive"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Big Game IT 2017"-->
+        <!--/>-->
+    <!--<Button-->
+        <!--android:id="@+id/sn2015"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:background="@drawable/btn1"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="25sp"-->
+        <!--android:fontFamily="cursive"-->
+        <!--android:textColor="@color/colorVang"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="IT's birthday 2015"-->
+        <!--/>-->
+    <!--<Button-->
+        <!--android:id="@+id/sn2016"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:textColor="@color/colorVang"-->
+        <!--android:background="@drawable/btn1"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="25sp"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:fontFamily="cursive"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="IT's birthday 2016"-->
+        <!--/>-->
+    <!--<Button-->
+        <!--android:id="@+id/khac"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:background="@drawable/btn1"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="25sp"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:fontFamily="cursive"-->
+        <!--android:textColor="@color/colorVang"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Other Activities"-->
+        <!--/>-->
+    <!--<Button-->
+        <!--android:id="@+id/gdh"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:background="@drawable/btn1"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="@color/colorVang"-->
+        <!--android:textSize="25sp"-->
+        <!--android:fontFamily="cursive"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Góc Dìm hàng"-->
+        <!--/>-->
+</LinearLayout>

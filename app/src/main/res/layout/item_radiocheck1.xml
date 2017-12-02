@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/aa8"
+    android:orientation="vertical">
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Don't miss it !!!"
+        android:textColor="#ff00ea"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/time"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Time"
+        android:textColor="#ff00ea"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="#ff00ea"
+        android:id="@+id/date"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Date"/>
+    <Button
+        android:id="@+id/link"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/btn1"
+        android:textStyle="bold"
+        android:textColor="@color/colorVang"
+        android:textSize="20sp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:fontFamily="cursive"
+        android:text="Let's listen"/>
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/a9"
+    >
+    <TextView
+        android:layout_marginTop="20sp"
+        android:id="@+id/textViewBcn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="IT Manager"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/anhCn"
+            android:src="@drawable/ic_choler"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:textColor="@color/colorVang"
+            android:layout_gravity="center"
+            android:id="@+id/tenCn"
+            android:text="Tên"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/colorVang"
+            android:layout_gravity="center"
+            android:id="@+id/chucVuCn"
+            android:text="Chức vụ"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/anhCuc"
+                android:src="@drawable/ic_choler"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                />
+            <TextView
+                android:textColor="@color/colorVang"
+                android:layout_gravity="center"
+                android:id="@+id/tenCuc"
+                android:text="Tên"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/colorVang"
+                android:layout_gravity="center"
+                android:id="@+id/chucVuCuc"
+                android:text="Chức vụ"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/anhLoi"
+                android:src="@drawable/ic_choler"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                />
+            <TextView
+                android:textColor="@color/colorVang"
+                android:layout_gravity="center"
+                android:id="@+id/tenLoi"
+                android:text="Tên"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/colorVang"
+                android:layout_gravity="center"
+                android:id="@+id/chucVuLoi"
+                android:text="Chức vụ"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

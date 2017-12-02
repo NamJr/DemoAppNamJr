@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.win81version2.demoapp">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/it"
+        android:label="IT CLUB"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Start"
-            android:label="@string/app_name"
+            android:name=".Gallery"
+            android:label="IT Club"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,19 +19,71 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".Animation$firstScreen"/>
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Recycler"/>
-
+        <activity android:name=".MainActivity" />
+        <!--Thanh Vien-->
+        <activity android:name=".Member"/>
+            <!--Ban-->
+            <activity android:name=".Ban"/>
+                <!--Ban Chu Nhiem-->
+                <activity android:name=".BcnActivity"/>
+                    <activity android:name=".BcnDetails"/>
+                <activity android:name=".BudActivity"/>
+                    <activity android:name=".BanAndroid"/>
+                        <activity android:name=".AndroidDetails"/>
+                    <activity android:name=".BanGame"/>
+                        <activity android:name=".GameDetails"/>
+                    <activity android:name=".BanWeb"/>
+                        <activity android:name=".WebDetails"/>
+                    <activity android:name=".BanDesign"/>
+                        <activity android:name=".DesignDetails"/>
+                <activity android:name=".BttActivity"/>
+                    <activity android:name=".BttDetails"/>
+                <activity android:name=".BcbActivity"/>
+                    <activity android:name=".BcbDetails"/>
+                <activity android:name=".BskActivity"/>
+                    <activity android:name=".BskDetails"/>
+                <activity android:name=".BtcActivity"/>
+                    <activity android:name=".BtcDetails"/>
+            <activity android:name=".Khoa"/>
+                <activity android:name=".D13"/>
+                <activity android:name=".D14"/>
+                    <activity android:name=".D14Details"/>
+                <activity android:name=".D15"/>
+                    <activity android:name=".D15Details"/>
+                <activity android:name=".D16"/>
+                    <activity android:name=".D16Details"/>
+        <!--<activity android:name=".Main2Activity"/>-->
+        <!--Ảnh-->
+        <!--<activity android:name=".Gallery"/>-->
+            <activity android:name=".Recycler"/>
+                <activity android:name=".BG2015Details"/>
+            <!--BigGame2015-->
+            <activity android:name=".BigGame2016"/>
+                <activity android:name=".BG2016Details"/>
+            <activity android:name=".BigGame2017"/>
+                <activity android:name=".BG2017Details"/>
+            <activity android:name=".SinhNhat2015"/>
+                <activity android:name=".BD2015Details"/>
+            <activity android:name=".SinhNhat2016"/>
+                <activity android:name=".BD2016Details"/>
+            <activity android:name=".OtherActivity"/>
+                <activity android:name=".MrMs2015"/>
+                    <activity android:name=".MrMs2015Details"/>
+                <activity android:name=".MrMs2016"/>
+                    <activity android:name=".MrMs2016Details"/>
+            <activity android:name=".GocDimHang"/>
+                <activity android:name=".GdhDetails"/>
+        <!--Radio-->
+        <activity android:name=".Radio"/>
+            <activity android:name=".CheckRadio"/>
+            <activity android:name=".RadioPast"/>
+            <activity android:name=".RadioSend"/>
+        <!--Event-->
+        <activity android:name=".BeginEvent"/>
+        <activity android:name=".EndEvent"/>
+        <activity android:name=".Contact"/>
     </application>
 
 </manifest>

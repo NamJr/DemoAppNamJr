@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/radio1">
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn1"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/colorVang"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Hôm nay bạn muốn viết gì???"
+        />
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/editName"
+        android:hint="Nhập tên bạn"
+        android:inputType="text"
+        android:textColorHint="@color/colorVang"
+        android:layout_width="350dp"
+        android:layout_height="50dp" />
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/editPhone"
+        android:hint="Nhập SĐT bạn"
+        android:inputType="number"
+        android:textColorHint="@color/colorVang"
+        android:layout_width="350dp"
+        android:layout_height="50dp" />
+    <EditText
+        android:id="@+id/editContent"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:textColorHint="@color/colorVang"
+        android:hint="Viết gì đây ta???"
+        />
+    <Button
+        android:background="@drawable/btn1"
+        android:layout_gravity="center"
+        android:id="@+id/radioSend"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Send"
+
+        />
+</LinearLayout>

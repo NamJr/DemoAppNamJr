@@ -5,24 +5,27 @@ package com.example.win81version2.demoapp;
  */
 
 public class Face {
-    private int idImage;
+//    private int idImage;
     private String NameImage;
 
+    public Face() {
 
-    public Face( int idImage, String NameImage){
-        this.idImage = idImage;
+    }
+
+    public Face(String NameImage){
+ //       this.idImage = idImage;
         this.NameImage  = NameImage;
     }
-    public int getIdImage(){
-        return idImage;
-    }
+//    public int getIdImage(){
+//        return idImage;
+//    }
     public String getNameImage(){
         return  NameImage;
     }
 
-    public void setIdImage(int idImage) {
-        this.idImage = idImage;
-    }
+//    public void setIdImage(int idImage) {
+//        this.idImage = idImage;
+//    }
 
     public void setNameImage(String nameImage) {
         NameImage = nameImage;

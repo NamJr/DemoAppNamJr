@@ -1,6 +1,7 @@
 package com.example.win81version2.demoapp;
 
 import android.content.Context;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -41,18 +44,21 @@ public class FaceAdapter extends RecyclerView.Adapter<FaceAdapter.ViewHolder>{
     @Override
     public void onBindViewHolder(final ViewHolder holder, final int position) {
         Face face = listFace.get(position);
-        holder.img.setImageResource(face.getIdImage());
-        holder.txt.setText(face.getNameImage());
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int position = holder.getAdapterPosition();
-                if( position < 0 )  return;
-                listFace.remove(position);
-                Toast.makeText(context, ""+position, Toast.LENGTH_SHORT).show();
-                notifyItemRemoved(position);
-            }
-        });
+//        holder.img.setImageResource(face.getIdImage());
+//        holder.txt.setText(face.getNameImage());
+//        holder.itemView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                int position = holder.getAdapterPosition();
+//                if( position < 0 )  return;
+//                listFace.remove(position);
+//                Toast.makeText(context, ""+position, Toast.LENGTH_SHORT).show();
+//                notifyItemRemoved(position);
+//            }
+//        });
+        Uri uri = Uri.parse(face.getNameImage());
+        holder.img.setImageURI( uri );
+        Picasso.with(context).load(uri).into(holder.img);
     }
 
     @Override
@@ -63,11 +69,11 @@ public class FaceAdapter extends RecyclerView.Adapter<FaceAdapter.ViewHolder>{
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView img;
-        TextView txt;
+//        TextView txt;
         public ViewHolder(View itemView) {
             super(itemView);
             img = itemView.findViewById(R.id.imageView);
-            txt = itemView.findViewById(R.id.textView);
+//            txt = itemView.findViewById(R.id.textView);
         }
     }
 }

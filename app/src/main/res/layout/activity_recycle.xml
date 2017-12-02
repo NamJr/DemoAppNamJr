@@ -14,8 +14,8 @@
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyle"
-        android:background="@drawable/bg"
-        android:scrollbars="vertical"
+        android:background="@drawable/a9"
+        android:scrollbars="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

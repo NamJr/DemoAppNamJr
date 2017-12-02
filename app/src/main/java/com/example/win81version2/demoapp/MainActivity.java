@@ -13,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
@@ -21,6 +23,9 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -82,34 +87,43 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_member) {
+//            Thread thread = new Thread(new Runnable() {
+//                @Override
+//                public void run() {
+//                    try {
+//                        Thread.sleep(0);
+//                    } catch ( InterruptedException e){
+//                        e.printStackTrace();
+//                    }
+//
+//                }
+//
+//            });
+//            thread.start();
+            Intent intent = new Intent(MainActivity.this,Member.class);
+            startActivity(intent);
+
+//            MainActivity.this.finish();
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
-            Toast.makeText(this, ""+item, Toast.LENGTH_SHORT).show();
-            Thread thread = new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    try {
-                        Thread.sleep(0);
-                    } catch ( InterruptedException e){
-                        e.printStackTrace();
-                    }
-                    Intent intent = new Intent(MainActivity.this,Recycler.class);
-                    startActivity(intent);
-                    MainActivity.this.finish();
-                }
+//            Toast.makeText(this, ""+item, Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this,Gallery.class);
+            startActivity(intent);
 
-            });
-            thread.start();
+        } else if (id == R.id.nav_news) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_events) {
+            Intent intent = new Intent(MainActivity.this,BeginEvent.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_radio) {
+            Intent intent = new Intent(MainActivity.this,Radio.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_contact) {
+            Intent intent = new Intent(MainActivity.this,Contact.class);
+            startActivity(intent);
         }
 
 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/a7"
+    >
+    <Button
+        android:id="@+id/ban"
+        android:background="@drawable/btn1"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:text="Các Ban"
+        android:textColor="@color/colorVang"
+        />
+    <Button
+        android:id="@+id/khoa"
+        android:background="@drawable/btn1"
+        android:layout_marginTop="50dp"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:textColor="@color/colorVang"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:text="Các Khóa"
+        />
+
+</LinearLayout>
