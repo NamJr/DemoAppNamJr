@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Gallery"
+            android:name=".Start"
             android:label="IT Club"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -56,7 +56,7 @@
                     <activity android:name=".D16Details"/>
         <!--<activity android:name=".Main2Activity"/>-->
         <!--Ảnh-->
-        <!--<activity android:name=".Gallery"/>-->
+        <activity android:name=".Gallery"/>
             <activity android:name=".Recycler"/>
                 <activity android:name=".BG2015Details"/>
             <!--BigGame2015-->
